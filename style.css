@@ -7,6 +7,25 @@ body {
   color: #333;
 }
 
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .project-card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
