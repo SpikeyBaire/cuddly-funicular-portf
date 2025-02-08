@@ -8,6 +8,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+const menuIcon = document.getElementById('menu-icon');
+const navList = document.getElementById('nav-list');
+
+menuIcon.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
