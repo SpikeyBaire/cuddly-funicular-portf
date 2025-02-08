@@ -6,7 +6,31 @@ body {
   line-height: 1.6;
   color: #333;
 }
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+
+  #nav-list.active {
+    display: flex;
+  }
+}
 /* Dark Mode */
 body.dark-mode {
   background-color: #121212;
