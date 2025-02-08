@@ -99,6 +99,25 @@ header nav ul li a {
   text-align: center;
 }
 
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#scroll-to-top.visible {
+  opacity: 1;
+}
+
 /* Contact Form */
 form {
   display: flex;
