@@ -8,6 +8,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+
 // Form submission handling
 document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
